@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleMineSweeper
 {
-    public interface IGridBuilder
+    public interface IGrid
     {
-        Grid BuildGrid(int Width, int Height, int Mines);
+        Cell[,] Cells { get; }
+
+        Enums.CellState CheckCell(int X, int Y);
+
     }
 }

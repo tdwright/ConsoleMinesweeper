@@ -11,5 +11,11 @@ namespace ConsoleMineSweeper
         public Enums.CellState CellState;
 
         public bool Flagged;
+
+        public Cell ()
+        {
+            this.Flagged = false;
+            this.CellState = Enums.CellState.Unchecked;
+        }
     }
 }

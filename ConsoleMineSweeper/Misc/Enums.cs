@@ -10,17 +10,17 @@ namespace ConsoleMineSweeper
     {
         public enum CellState
         {
-            Unchecked,
-            Mine,
-            Clear,
-            Num1,
-            Num2,
-            Num3,
-            Num4,
-            Num5,
-            Num6,
-            Num7,
-            Num8
+            Unchecked = -1,
+            Mine = 9,
+            Clear = 0,
+            Num1 = 1,
+            Num2 = 2,
+            Num3 = 3,
+            Num4 = 4,
+            Num5 = 5,
+            Num6 = 6,
+            Num7 = 7,
+            Num8 = 8
         }
     }
 }
